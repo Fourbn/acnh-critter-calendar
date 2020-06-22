@@ -164,7 +164,7 @@ acnh.museumDescr = (fishArray, bugArray) => {
                 <p class="quoteTitle">${avail[1]['name']['name-USen']}</p>
                     <p>${museumPhrase}</p>
                     </div>
-                <img src="./assets/acnh-blathers.PNG/" alt="Blathers the Owl">
+                <img src="./acnh-blathers.PNG/" alt="Blathers the Owl">
                 <i class="fas fa-times"></i>
                 `)
                 acnh.museumExit();
@@ -181,7 +181,7 @@ acnh.museumDescr = (fishArray, bugArray) => {
                     <p class="quoteTitle">${avail[1]['name']['name-USen']}</p>
                     <p>${museumPhrase}</p>
                 </div>
-                <img src="./assets/acnh-blathers.PNG/" alt="Blathers the Owl">
+                <img src="./acnh-blathers.PNG/" alt="Blathers the Owl">
                 <i class="fas fa-times"></i>
                 `)
                 acnh.museumExit();

@@ -1,8 +1,8 @@
 //namespace
 const acnh = {};
 
-acnh.apiFish = 'http://acnhapi.com/v1/fish';
-acnh.apiBug = 'http://acnhapi.com/v1/bugs';
+acnh.apiFish = 'https://acnhapi.com/v1/fish/';
+acnh.apiBug = 'https://acnhapi.com/v1/bugs/';
 
 //array used to help me format the user inputted Date that is displayed on the page.
 acnh.monthArray = ['blank', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to your Island!</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=BioRhyme:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/08bb3c9c2d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="coverPage">
+        <div class="signboardForm">
+            <form action="" class="userInput" name="userInput">
+                <div class="greeting">
+                    <p>Hello,</p>
+                    
+                    <label for="villagerName" class="sr-only">What is your villager name?</label>
+                    <input class="greetingInput" type="text" id="villagerName" placeholder="Villager Name">
+                    
+                    <p>from</p>
+                    
+                    <label for="islandName" class="sr-only">What is your island's name?</label>
+                    <input class="greetingInput" type="text" id="islandName" placeholder="Island Name">
+                    
+                    <p>Island.</p>
+                </div>
+                <div class="timeDate">
+                    <p>It is now</p>
+                    
+                    <label for="currentTime" class="sr-only">What is the current time?</label>
+                    <input class="tdInputs" type="time" id="currentTime">
+                    
+                    <p>on</p>
+                    <label for="currentDate" class="sr-only">What is the current date?</label>
+                    <input class="tdInputs" type="date" id="currentDate">
+                    
+                    <p>in the</p>
+
+                    <select class="tdInputs" name="hemisphere" id="hemisphere-select">
+                        <option value="northern">Northern Hemisphere</option>
+                        <option value="southern">Southern Hemisphere</option>
+                    </select>
+                </div>
+
+                <div class="letFly">
+                    <p>Are you ready to see your Island?</p>
+                    <input type="submit" value="">
+                </div>
+            </form>
+        </div> <!--signboard div end-->
+    </div> <!--coverpage div end-->
+        
+    <!-- results page that loads after user submits info -->
+    <div class="welcomeSign">
+        <h1></h1>
+        <p></p>
+    </div>
+    <div class="islandBackground">
+
+        <h2>Critters you can catch right now!</h2>
+
+        <h4 class="bugMonth">All the Bugs you can catch in</h4>
+        <div class="bugContainer">
+        </div>
+        
+        <h4 class="fishMonth">All the Fish you can catch in</h4>
+        <div class="fishContainer">
+        </div>
+        
+        <!-- hidden until user clicks on critter icon -->
+        <div class="museumQuote">
+        </div>
+
+        <h4 class="critterCommon">There's no rush! These critters are around all year long!</h4>
+        <div class="commonContainer">
+        </div>
+    </div>
+    
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

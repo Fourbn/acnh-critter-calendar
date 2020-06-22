@@ -1,0 +1,365 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* stripping & default styles */
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    position: relative;
+    font-size: 62.5%;
+}
+
+h1, h2 {
+    font-family: 'BioRhyme', serif;
+    font-size: 2.5rem;
+    color: #39383d;
+}
+
+h3, h4, h5, p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+    color: #39383d;
+}
+/* font-family: 'Balsamiq Sans', cursive;
+font-family: 'BioRhyme', serif; */
+
+/* user input landing page stylings */
+.coverPage {
+    background: #71b6f7;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    background: url(./assets/acnh-sign-board.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 60px;
+    padding: 40px 20px;
+    position: relative;
+    line-height: 2.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.greeting p, .timeDate p {
+    font-family: 'BioRhyme';
+    margin: 0 10px;
+}
+
+.greetingInput, .tdInputs {
+    font-family: 'BioRhyme';
+    font-size: 1rem;
+    color: #39383d;
+    background: none;
+    border: none;
+    padding: 0;
+    border-bottom: 2px #39383d solid;
+}
+
+.greetingInput {
+    max-width: 130px;
+}
+
+.timeDate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.letFly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.letFly p {
+    font-family: 'BioRhyme';
+    margin: 20px 0;
+}
+
+.letFly input[type='submit'] {
+    font-family: 'BioRhyme';
+    font-size: 1rem;
+    background: url(./assets/dodo-logo1.png);
+    background-position: center;
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.letFly input[type='submit']:active {
+    transition: all .1s;
+    width: 115px;
+    height: 115px;
+}
+
+
+
+/* user island page stylings */
+.islandBackground {
+    background: #f28b73;
+    min-height: 100vh;
+    z-index: 100;
+    padding-top: 120px;
+}
+
+h3 {
+    font-size: 2.4rem;
+    min-width: 100px;
+    background: #bcf8cb;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.islandBackground h4 {
+    padding: 5px 30px;
+    font-size: 1.6rem;
+    background: #bcf8cb;
+}
+
+.islandBackground p {
+    max-width: 150px;
+    text-align: center;
+}
+
+.welcomeSign {
+    background: url(./assets/acnh-wood-texture.jpg);
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+}
+
+h1 .island {
+    font-weight: 700;
+}
+
+h1 .villager {
+    font-weight: 700;
+}
+
+.welcomeSign p {
+    font-size: 1.6rem;
+    max-width: 100%;
+    text-align: left;
+    padding-top: 10px;
+}
+
+h2 {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background: #66b888;
+}
+
+h5 {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+.bugContainer, .fishContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.fishContainer {
+    background: #fbacc7;
+}
+
+.indivBug, .indivFish {
+    background: url(./assets/acnh-wood-texture.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 10px 5px 10px #744436;
+    min-width: 200px;
+    min-height: 150px;
+}
+
+.indivFish {
+    background: url(./assets/water-texture.png);
+    background-size: cover;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.critterHome {
+    text-transform: lowercase;
+}
+
+.commonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #cfaf8e;
+}
+
+.common {
+    background: #fff09c;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.museumQuote{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    right: none;
+    top: 25%;
+    background: #f5f7e9;
+    font-family: 'Balsamiq Sans', sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0;
+}
+
+.quoteBlock {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.museumQuote h5 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    color: #744436;
+}
+
+.museumQuote p {
+    padding: 0 20px;
+    color: #39383d;
+    max-width: 100%;
+    padding-top: 10px;
+}
+
+.museumQuote .quoteTitle {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.museumQuote img {
+    right: 0;
+    top: 210px;
+    width: 20%;
+    max-height: 100%;
+}
+
+.fas {
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    font-size: 3rem;
+    color: #ad7a3e;
+    cursor: pointer;
+}
+
+/* fix wooden sign shrink problems */
+@media (max-width: 945px) {
+    form {
+        background-size: auto;
+    }
+}
+
+/* blathers quote pop-up restyling for smaller screens */
+@media (max-width: 888px) {
+    .museumQuote {
+        padding: 5px;
+    }
+
+    .quoteBlock {
+        width: 90%;
+    }
+    
+    .museumQuote img {
+        display: none;
+    }
+
+    .museumQuote p {
+        padding: 5px;
+    }
+
+
+}
+
+/* welcome sign not fixed to top of page */
+@media (max-width: 755px) {
+    .welcomeSign {
+        position: relative;
+    }
+
+    .islandBackground {
+        padding-top: 0;
+    }
+}
+
+/* fix form shrink breaking out of div */
+@media (max-width: 645px) {
+    .coverPage {
+        height: 130vh;
+    }
+    
+    form {
+        margin: 0 20px;
+    }
+}
+
+/* blathers quote pop-up X button repositioned */
+@media (max-width: 415px) {
+    .fas {
+        right: 10px;
+    }
+}
